@@ -9,6 +9,9 @@ const config = {
             ssr: {
                 noExternal: dev ? [] : ['@supabase/supabase-js']
             },
+			define: {
+                'process.env': process.env,
+            },
 		}
 	},
 
