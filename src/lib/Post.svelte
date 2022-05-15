@@ -26,9 +26,13 @@
     <figure>
         <img alt='kek' src={publicURL}>
     </figure>
+    {:else}
+        <figure>
+            <img alt='kek' src="/2.png">
+        </figure>
     {/if}
     <div class="card-body">
-      <h2 class="card-title">{user} says . .</h2>
+      <h2 class="card-title">{user} says</h2>
       <p>{content}</p>
       <div class="card-actions flex justify-between">
         {#await createCommentPromise}

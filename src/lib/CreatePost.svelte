@@ -16,7 +16,7 @@
 
 <form class="form-control" on:submit|preventDefault={handleCreatePost}>
     <label for="post" class="label">
-        <span class="label-text text-xl">Post</span>
+        <span class="label-text text-xl">Post sum shite</span>
     </label>
     <UploadImage bind:file />
     <textarea required bind:value={postContent} class="textarea textarea-bordered"></textarea>
