@@ -1,6 +1,6 @@
 # Creating this project
 
-Tools/Tech used:
+# Tools/Tech used:
     -sveltekit
     -svelte
     -tailwind
@@ -11,16 +11,16 @@ Tools/Tech used:
     -html
     -supabase
 
-Dependencies:
+# Dependencies:
     -daisyui > npm i daisyui
     -Tailwindcss > npx svelte-add@latest tailwindcss
     -Supabase > npm i @supabase/supabase-js
-    -dotenv > npm i dotenv
 
-Config Changes:
+# Config Changes:
     -Daisyui
         > Added "require('daisyui')," -> on tailwind.config.cjs > plugins
         > Added theme on app.html > data-theme="business"
+    (FOR TS but did not add on this project)
     -Paths on $root
         > Added on tsconfig.json
             "paths": {
