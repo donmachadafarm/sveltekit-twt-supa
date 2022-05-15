@@ -1,12 +1,12 @@
 import preprocess from 'svelte-preprocess';
-// import adapter from '@sveltejs/adapter-auto';
-import vercel from '@sveltejs/adapter-vercel';
+import adapter from '@sveltejs/adapter-auto';
+// import vercel from '@sveltejs/adapter-vercel';
 
 const dev = process.env.NODE_ENV === 'development'
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
-		adapter: vercel(),
+		adapter: adapter(),
         vite: {
             ssr: {
                 noExternal: dev ? [] : ['@supabase/supabase-js']
